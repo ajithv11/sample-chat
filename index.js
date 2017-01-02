@@ -1,7 +1,9 @@
-var app  		= require('express')();
+var express		= require("express");
+var app			= express();
 var server 		= require('http').createServer(app);
 var io  		= require('socket.io').listen(server);
 
+app.use(express.static(__dirname+'/public'));
 app.set('port', (process.env.PORT || 5000));
 
 require('./routes')(app, io);
@@ -9,8 +11,11 @@ require('./socket')(app, io);
 
 
 
-var listen = app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
+var listen = server.listen(app.get('port'), function(){
+	console.log("Started");
 });
+
+
+
 
 
