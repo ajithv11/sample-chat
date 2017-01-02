@@ -1,0 +1,27 @@
+{
+  "name": "sample-chat",
+  "version": "1.0.0",
+  "description": "This is a sample chat app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+   "dependencies": {
+   	"express": "4.14.0",
+    "socket.io": "1.4.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajithv11/sample-chat"
+  },
+  "keywords": [
+    "Sample",
+    "Chat"
+  ],
+  "author": "Ajith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajithv11/sample-chat/issues"
+  },
+  "homepage": "https://github.com/ajithv11/sample-chat"
+}
